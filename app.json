@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Rondines ATA",
+    "slug": "rondines-grupo-ata",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E1A"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0E1A"
+      },
+      "package": "com.grupoata.rondines",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.grupoata.rondines",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Se usa la cámara para escanear los códigos QR de los puntos de rondín.",
+        "NSLocationWhenInUseUsageDescription": "Se usa tu ubicación GPS para verificar que estás en el punto de rondín correcto."
+      }
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-location",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#00FF88",
+          "sounds": []
+        }
+      ]
+    ]
+  }
+}
