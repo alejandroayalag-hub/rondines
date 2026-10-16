@@ -1,0 +1,44 @@
+.page { display: flex; flex-direction: column; gap: 16px; height: calc(100vh - 48px); }
+.header { display: flex; justify-content: space-between; align-items: flex-start; flex-shrink: 0; }
+.title { font-size: 22px; font-weight: 700; letter-spacing: 2px; color: var(--text-primary); }
+.sub { font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-top: 4px; }
+.headerRight { display: flex; align-items: center; gap: 12px; }
+.updated { font-size: 12px; color: var(--text-muted); font-family: monospace; }
+.refreshBtn { background: transparent; border: 1px solid var(--border); color: var(--text-second); padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 12px; letter-spacing: 1px; }
+.refreshBtn:hover { border-color: var(--primary); color: var(--primary); }
+
+.mapLayout { display: grid; grid-template-columns: 1fr 260px; gap: 16px; flex: 1; min-height: 0; }
+.mapWrapper { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); position: relative; }
+.sidebar { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); display: flex; flex-direction: column; overflow: hidden; }
+.sidebarTitle { padding: 14px 16px; font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+
+.guardiaCard { padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.15s; }
+.guardiaCard:hover { background: var(--bg); }
+.cardSelected { background: var(--primary-glow); border-left: 2px solid var(--primary); }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+.dot_ok { background: var(--primary); }
+.dot_warning { background: var(--warning); }
+.dot_danger { background: var(--danger); }
+.guardiaInfo { display: flex; align-items: center; }
+.guardiaNombre { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+.guardiaUltimo { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+.guardiaTime { font-size: 11px; font-family: monospace; margin-top: 2px; }
+.timeOk { color: var(--primary); }
+.timeWarning { color: var(--warning); }
+.timeDanger { color: var(--danger); }
+
+.legend { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+.legendTitle { font-size: 11px; color: var(--text-muted); letter-spacing: 1px; margin-right: 4px; }
+.legendItem { display: flex; align-items: center; gap: 6px; }
+.legendDot { width: 8px; height: 8px; border-radius: 50%; }
+.legendPunto { width: 10px; height: 10px; border-radius: 2px; }
+
+.mapOverlay { position: absolute; top: 12px; right: 12px; z-index: 1000; display: flex; flex-direction: column; gap: 6px; }
+.overlayItem { background: rgba(17,24,39,0.9); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-primary); }
+.overlayDot { width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
+.overlayDotGuard { background: #3B82F6; }
+
+.popup { font-family: 'Inter', sans-serif; }
+.popupContent { font-size: 13px; color: #1a1a1a; }
+
+.empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 8px; color: var(--text-muted); font-size: 13px; }

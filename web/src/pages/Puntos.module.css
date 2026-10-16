@@ -1,0 +1,35 @@
+.page { animation: fadeIn 0.2s ease; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.title { font-family: var(--font-mono); font-size: 20px; font-weight: bold; letter-spacing: 3px; color: var(--text-1); }
+.sub { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); letter-spacing: 1px; margin-top: 4px; }
+.addBtn { background: var(--primary); border: none; border-radius: 6px; color: var(--bg); font-family: var(--font-mono); font-size: 10px; font-weight: bold; letter-spacing: 2px; padding: 10px 20px; }
+.addBtn:hover { opacity: 0.9; }
+
+.form { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-bottom: 24px; }
+.formTitle { font-family: var(--font-mono); font-size: 11px; font-weight: bold; color: var(--primary); letter-spacing: 2px; margin-bottom: 20px; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.label { font-family: var(--font-mono); font-size: 9px; font-weight: bold; color: var(--text-3); letter-spacing: 2px; }
+.input { background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text-1); padding: 9px 12px; font-size: 13px; outline: none; }
+.input:focus { border-color: var(--primary); }
+.input::placeholder { color: var(--text-3); }
+.error { font-family: var(--font-mono); font-size: 11px; color: var(--danger); background: var(--danger-glow); border: 1px solid rgba(255,45,85,0.2); border-radius: 4px; padding: 8px 12px; margin-top: 4px; }
+.formActions { margin-top: 20px; }
+.saveBtn { background: var(--primary); border: none; border-radius: 6px; color: var(--bg); font-family: var(--font-mono); font-size: 11px; font-weight: bold; letter-spacing: 2px; padding: 10px 24px; }
+.saveBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.tableWrapper { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 16px; }
+.table { width: 100%; border-collapse: collapse; }
+.table th { font-family: var(--font-mono); font-size: 10px; font-weight: bold; color: var(--text-3); letter-spacing: 1.5px; padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+.row { border-bottom: 1px solid var(--border); }
+.row:last-child { border-bottom: none; }
+.row:hover { background: var(--bg-elevated); }
+.row td { padding: 13px 16px; font-size: 13px; }
+.orderCell { font-family: var(--font-mono); font-size: 12px; color: var(--text-3); width: 40px; }
+.puntoNombre { font-weight: 600; color: var(--text-1); }
+.puntoDesc { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+.qrCode { font-family: var(--font-mono); font-size: 11px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 3px 8px; color: var(--primary); }
+.monoCell { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); }
+.loadingCell { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); text-align: center; padding: 40px; }
+
+.hint { display: flex; align-items: flex-start; gap: 10px; font-size: 12px; color: var(--text-3); background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }

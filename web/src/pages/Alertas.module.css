@@ -1,0 +1,25 @@
+.page { animation: fadeIn 0.2s ease; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.title { font-family: var(--font-mono); font-size: 20px; font-weight: bold; letter-spacing: 3px; color: var(--text-1); }
+.sub { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); letter-spacing: 1px; margin-top: 4px; }
+
+.filtros { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.filtroGroup { display: flex; gap: 4px; }
+.filtroBtn { background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; color: var(--text-3); font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; padding: 6px 14px; transition: all 0.15s; }
+.filtroBtn:hover { color: var(--text-2); border-color: var(--border-light); }
+.filtroActive { border-color: var(--primary) !important; color: var(--primary) !important; background: var(--primary-glow) !important; }
+
+.tableWrapper { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.table { width: 100%; border-collapse: collapse; }
+.table th { font-family: var(--font-mono); font-size: 10px; font-weight: bold; letter-spacing: 1.5px; color: var(--text-3); padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+.row { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+.row:last-child { border-bottom: none; }
+.row:hover { background: var(--bg-elevated); }
+.rowSOS { background: var(--danger-glow); }
+.row td { padding: 13px 16px; font-size: 13px; }
+.guardiaCell { font-weight: 600; color: var(--text-1); }
+.mensajeCell { color: var(--text-2); font-size: 12px; max-width: 280px; }
+.monoCell { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); }
+.resolverBtn { background: transparent; border: 1px solid var(--border); border-radius: 4px; color: var(--text-3); padding: 4px 10px; font-family: var(--font-mono); font-size: 10px; white-space: nowrap; }
+.resolverBtn:hover { border-color: var(--primary); color: var(--primary); }
+.loading, .empty { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); text-align: center; padding: 40px; letter-spacing: 1px; }

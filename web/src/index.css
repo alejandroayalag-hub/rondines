@@ -1,0 +1,72 @@
+/* ── Variables globales ─────────────────────────── */
+:root {
+  --bg:          #080C14;
+  --bg-card:     #0D1526;
+  --bg-elevated: #111E33;
+  --primary:     #00FF88;
+  --primary-glow:rgba(0,255,136,0.08);
+  --danger:      #FF2D55;
+  --danger-glow: rgba(255,45,85,0.10);
+  --warning:     #FFD60A;
+  --warning-glow:rgba(255,214,10,0.10);
+  --text-1:      #E8EDF5;
+  --text-2:      #8896B3;
+  --text-3:      #3D4F6B;
+  --border:      #141F33;
+  --border-light:#1E2F4A;
+  --font-mono:   'Courier New', Courier, monospace;
+  --font-sans:   -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ── Reset ──────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; font-family: inherit; }
+input, textarea, select { font-family: inherit; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
+
+/* ── Badges globales ────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.badge-ok      { background: rgba(0,255,136,0.12);  color: var(--primary); }
+.badge-danger  { background: rgba(255,45,85,0.12);   color: var(--danger);  }
+.badge-warning { background: rgba(255,214,10,0.12);  color: var(--warning); }
+.badge-off     { background: var(--bg-elevated);     color: var(--text-3);  }
+
+/* ── Animaciones ────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+.blinking { animation: blink 1.2s ease-in-out infinite; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fadeIn { animation: fadeIn 0.25s ease; }

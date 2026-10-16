@@ -1,0 +1,54 @@
+.page { animation: fadeIn 0.2s ease; }
+
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; }
+.pageTitle { font-family: var(--font-mono); font-size: 20px; font-weight: bold; color: var(--text-1); letter-spacing: 3px; }
+.pageSub { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); letter-spacing: 2px; margin-top: 4px; }
+.headerRight { display: flex; align-items: center; gap: 12px; }
+.updated { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); }
+.refreshBtn { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 6px; color: var(--text-2); font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; padding: 8px 16px; transition: border-color 0.15s, color 0.15s; }
+.refreshBtn:hover { border-color: var(--primary); color: var(--primary); }
+
+.statsRow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+.statCard { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+.statLabel { font-family: var(--font-mono); font-size: 9px; color: var(--text-3); letter-spacing: 2px; margin-bottom: 10px; }
+.statValue { font-family: var(--font-mono); font-size: 32px; font-weight: bold; color: var(--text-1); line-height: 1; }
+.statSub { font-size: 11px; color: var(--text-3); margin-top: 6px; }
+.accent_primary .statCard { border-color: rgba(0,255,136,0.2); }
+.accent_danger .statCard  { border-color: rgba(255,45,85,0.2); }
+.accent_warning .statCard { border-color: rgba(255,214,10,0.2); }
+
+.mainGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.panel { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.panelHeader { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; border-bottom: 1px solid var(--border); }
+.panelTitle { font-family: var(--font-mono); font-size: 11px; font-weight: bold; color: var(--text-2); letter-spacing: 2px; }
+.panelCount { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); background: var(--bg-elevated); padding: 2px 8px; border-radius: 10px; }
+.alertCount { color: var(--danger); background: var(--danger-glow); }
+
+.guardiasList, .alertasList { padding: 8px 0; max-height: 340px; overflow-y: auto; }
+.guardiaRow { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--border); transition: background 0.1s; }
+.guardiaRow:last-child { border-bottom: none; }
+.guardiaRow:hover { background: var(--bg-elevated); }
+.guardiaDot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dot_ok      { background: var(--primary); box-shadow: 0 0 6px rgba(0,255,136,0.6); }
+.dot_warning { background: var(--warning); }
+.dot_danger  { background: var(--danger);  box-shadow: 0 0 6px rgba(255,45,85,0.6); }
+.dot_sin-escaneo { background: var(--text-3); }
+.guardiaInfo { flex: 1; min-width: 0; }
+.guardiaNombre { font-size: 13px; font-weight: 600; color: var(--text-1); }
+.guardiaRuta { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); margin-top: 2px; }
+.guardiaStats { text-align: right; }
+.guardiaUltimo { font-family: var(--font-mono); font-size: 10px; color: var(--text-2); }
+.guardiaTime { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); margin-top: 2px; }
+.tiempoAlerta { color: var(--danger); }
+
+.alertaRow { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid var(--border); gap: 12px; }
+.alertaRow:last-child { border-bottom: none; }
+.alertaSOS { background: var(--danger-glow); }
+.alertaLeft { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.alertaNombre { font-size: 12px; font-weight: 600; color: var(--text-1); }
+.alertaMensaje { font-size: 11px; color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.resolverBtn { background: transparent; border: 1px solid var(--border); border-radius: 4px; color: var(--text-3); padding: 4px 10px; font-family: var(--font-mono); font-size: 11px; transition: border-color 0.15s, color 0.15s; flex-shrink: 0; }
+.resolverBtn:hover { border-color: var(--primary); color: var(--primary); }
+
+.empty { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 40px 20px; color: var(--text-3); font-size: 13px; }
+.empty span { font-size: 24px; }
